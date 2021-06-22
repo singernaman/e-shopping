@@ -11,7 +11,7 @@ namespace e_shopping.Models
     {
         public DatabaseContext(DbContextOptions<DatabaseContext> options):base(options)
         {
-
+            
         }
     }
 }
