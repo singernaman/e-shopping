@@ -54,8 +54,9 @@ namespace e_shopping
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=WebsiteController}/{action=Index}/{id?}");
             });
+           
         }
     }
 }

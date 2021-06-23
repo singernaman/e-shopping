@@ -8,15 +8,18 @@ namespace e_shopping.Areas.Module2_admin.Controllers
 {
     public class Admin_HomeController : Controller
     {
-        public IActionResult Index()
+
+        public IActionResult login()
         {
             return View();
         }
 
         [HttpPost]
-        public IActionResult Index()
+        public IActionResult login()
         {
-            return View();
+            return View();    
         }
+
+
     }
 }
