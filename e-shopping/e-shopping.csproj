@@ -17,12 +17,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\" />
     <Folder Include="Areas\Module1_website\Controllers\" />
     <Folder Include="Areas\Module1_website\Data\" />
     <Folder Include="Areas\Module1_website\Models\" />
     <Folder Include="Areas\Module1_website\Views\" />
-    <Folder Include="Areas\Module2_admin\Controllers\" />
     <Folder Include="Areas\Module2_admin\Data\" />
     <Folder Include="Areas\Module2_admin\Models\" />
     <Folder Include="Areas\Module2_admin\Views\" />

@@ -13,5 +13,6 @@ namespace e_shopping.Models
         {
             
         }
+        public Microsoft.EntityFrameworkCore.DbSet<Admin> Admins { get; set; }
     }
 }
