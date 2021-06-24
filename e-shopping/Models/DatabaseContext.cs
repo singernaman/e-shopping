@@ -9,6 +9,10 @@ namespace e_shopping.Models
 {
     public class DatabaseContext: Microsoft.EntityFrameworkCore.DbContext
     {
+        public DatabaseContext()
+        {
+        }
+
         public DatabaseContext(DbContextOptions<DatabaseContext> options):base(options)
         {
             
