@@ -19,9 +19,16 @@ namespace e_shopping.Areas.Module2_admin.Controllers
         [HttpPost]
         public IActionResult login(Admin adm)
         {
-            db.Admins.Add(adm);
-            db.SaveChanges();
-            return View();    
+            var data = (from a in db.Admins where a.admin_email == adm.admin_email && a.admin_password == adm.admin_password select a).ToList();
+            if(data.Count>0)
+            {
+                return RedirectToAction("AdminDashboardController", "Index");
+            }
+            else
+            {
+                ViewBag.msg = "Admin Login failed";
+            }
+            return View();
         }
 
 
